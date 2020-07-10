@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BUTTON STYLE</title>
+    <meta name="description" content="">
+    <style type="text/css">
+        body {
+            background-color: #f5f5f5;
+            font-family: tahoma;
+            font-size: 16px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .frame {
+            width: 600px;
+            height: 400px;
+            background: url(bg.png) no-repeat;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .blank {
+            background: url(bg2.png) no-repeat;
+        }
+
+        .btn-style {
+            position: absolute;
+            right: 18px;
+            bottom: 12px;
+        }
+
+        .btn-disable {
+            position: absolute;
+            left: 18px;
+            bottom: 12px;
+        }
+
+        .group {
+            position: absolute;
+            left: 40px;
+            top: 120px;
+        }
+
+        .group a {
+            margin-bottom: 10px;
+        }
+
+        .btn a {
+            display: inline-block;
+            width: 140px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .btn-style:hover {
+            cursor: pointer;
+        }
+
+        .btn-disable:hover {
+            cursor: no-drop;
+        }
+
+        .blue a {
+            background-color: #066FE1;
+            border: 1px solid #023CA5;
+            font-weight: bold;
+            box-shadow: 0 1px 2px #ddd;
+        }
+
+        .red a {
+            background-color: #D0021B;
+            border: 1px solid #B20016;
+            font-weight: bold;
+            box-shadow: 0 1px 2px #ddd;
+        }
+
+        .gray a {
+            background-color: #CCCCCC;
+            border: 1px solid #999;
+            box-shadow: 0 1px 2px #ddd;
+            color: #181818;
+        }
+
+        .blue .over {
+            background-color: #1686FF;
+            border: 1px solid #005BFF;
+        }
+
+        .red .over {
+            background-color: #F5001E;
+            border: 1px solid #DA001B;
+        }
+
+        .gray .over {
+            background-color: #DDDDDD;
+            border: 1px solid #BBB;
+
+        }
+
+
+        .blue .disable,
+        .blue .btn-disable {
+            background-color: #91BBE8;
+            border: 1px solid #8CA6D4;
+            color: #C3E0FF;
+        }
+
+        .red .disable,
+        .red .btn-disable {
+            background-color: #F0A6B0;
+            border: 1px solid #EF8F9B;
+            color: #FFC9D1;
+
+        }
+
+        .gray .disable,
+        .gray .btn-disable {
+            background-color: #EEE;
+            border: 1px solid #CCC;
+            color: #999;
+
+        }
+
+        .blue .btn-style:hover {
+            background-color: #1686FF;
+            border: 1px solid #005BFF;
+        }
+
+        .blue .btn-style:active {
+            background-color: #066FE1;
+            border: 1px solid #023CA5;
+        }
+
+        .red .btn-style:hover {
+
+            background-color: #F5001E;
+            border: 1px solid #DA001B;
+        }
+
+        .red .btn-style:active {
+            background-color: #D0021B;
+            border: 1px solid #B20016;
+        }
+
+        .gray .btn-style:hover {
+            background-color: #DDDDDD;
+            border: 1px solid #BBB;
+
+        }
+
+        .gray .btn-style:active {
+            background-color: #CCCCCC;
+            border: 1px solid #999;
+        }
+
+        .gray-small a {
+            background-color: #eee;
+            border: 1px solid #999;
+            font-size: 12px;
+            color: #181818;
+            width: 80px;
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .gray-small .over {
+            background-color: #f5f5f5;
+            border: 1px solid #bbb;
+        }
+
+        .btn-show:hover {
+            background-color: #f5f5f5;
+            border: 1px solid #bbb;
+            cursor: pointer;
+        }
+
+        .btn-show:active {
+            background-color: #eee;
+            border: 1px solid #999;
+        }
+
+        ul {
+            width: 400px;
+            margin: 0 auto;
+            padding: 100px 0 0 0;
+        }
+
+        li a,
+        .ul-style li {
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            background-color: #eee;
+            border: 2px solid #eee;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-indent: 160px;
+            background: url(icon1.png) no-repeat #eee 80px center;
+
+        }
+
+        li a:hover {
+            border: 2px solid #ccc;
+            background-color: #f5f5f5;
+            cursor: pointer;
+        }
+
+        li a:active {
+            background-color: #eee;
+        }
+
+        li .icon2 {
+            background-image: url(icon2.png);
+        }
+
+        li .icon3 {
+            background-image: url(icon3.png);
+            color: #D0021B;
+        }
+
+        li .icon3:hover {
+            border: 2px solid #D0021B;
+        }
+
+        .ul-style {
+
+            padding-top: 60px;
+        }
+
+        .ul-style li {
+            background-image: none;
+            text-indent: 20px;
+            line-height: normal;
+        }
+
+        .ul-style li p {
+            font-size: 14px;
+            font-weight: normal;
+            color: #181818;
+
+        }
+
+        .ul-style .over {
+            background-color: #f5f5f5;
+            border: 2px solid #ccc;
+
+        }
+
+        .ul-style .down {
+            border: 2px solid #ccc;
+        }
+
+        .ul-style .disable {
+            color: #ccc;
+        }
+
+        .ul-style.delete li {
+            color: #D0021B;
+        }
+
+        .ul-style.delete .over {
+            border: 2px solid #D0021B;
+        }
+
+        .ul-style.delete .down {
+            border: 2px solid #D0021B;
+        }
+
+        .ul-style.delete .disable {
+            color: #EEC4C9;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="frame">
+        <div class="btn blue">
+            <div class="group">
+                <div><a class="normal">Normal</a> <span>bg:<strong>066FE1</strong>; text:<strong>FFFFFF</strong>; border:<strong>023CA5</strong></span></div>
+                <div><a class="over">Over</a> <span>bg:<strong>1686FF</strong>; text:<strong>FFFFFF</strong>; border:<strong>005BFF</strong></span></div>
+                <div><a class="down">Down</a> <span>bg:<strong>066FE1</strong>; text:<strong>FFFFFF</strong>; border:<strong>023CA5</strong></span></div>
+                <div><a class="disable">Disable</a> <span>bg:<strong>91BBE8</strong>; text:<strong>C3E0FF</strong>; border:<strong>8CA6D4</strong></span></div>
+            </div>
+            <a class="btn-style">Button</a>
+            <a class="btn-disable">Button</a>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="btn red">
+            <div class="group">
+                <div><a class="normal">Normal</a> <span>bg:<strong>D0021B</strong>; text:<strong>FFFFFF</strong>; border:<strong>B20016</strong></span></div>
+                <div><a class="over">Over</a> <span>bg:<strong>F5001E</strong>; text:<strong>FFFFFF</strong>; border:<strong>DA001B</strong></span></div>
+                <div><a class="down">Down</a> <span>bg:<strong>D0021B</strong>; text:<strong>FFFFFF</strong>; border:<strong>B20016</strong></span></div>
+                <div><a class="disable">Disable</a> <span>bg:<strong>F0A6B0</strong>; text:<strong>FFC9D1</strong>; border:<strong>EF8F9B</strong></span></div>
+            </div>
+            <a class="btn-style">Button</a>
+            <a class="btn-disable">Button</a>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="btn gray">
+            <div class="group">
+                <div><a class="normal">Normal</a> <span>bg:<strong>CCCCCC</strong>; text:<strong>181818</strong>; border:<strong>999999</strong></span></div>
+                <div><a class="over">Over</a> <span>bg:<strong>DDDDDD</strong>; text:<strong>181818</strong>; border:<strong>BBBBBB</strong></span></div>
+                <div><a class="down">Down</a> <span>bg:<strong>CCCCCC</strong>; text:<strong>181818</strong>; border:<strong>999999</strong></span></div>
+                <div><a class="disable">Disable</a> <span>bg:<strong>EEEEEE</strong>; text:<strong>999999</strong>; border:<strong>CCCCCC</strong></span></div>
+            </div>
+            <a class="btn-style">Button</a>
+            <a class="btn-disable">Button</a>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="btn gray-small">
+            <div class="group">
+                <div><a class="normal">Normal</a> <span>bg:<strong>EEEEEE</strong>; text:<strong>181818</strong>; border:<strong>999999</strong></span></div>
+                <div><a class="over">Over</a> <span>bg:<strong>F5F5F5</strong>; text:<strong>181818</strong>; border:<strong>BBBBBB</strong></span></div>
+                <div><a class="down">Down</a> <span>bg:<strong>EEEEEE</strong>; text:<strong>181818</strong>; border:<strong>999999</strong></span></div>
+                <div><a class="btn-show">Show Detail</a></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="frame blank">
+
+        <ul>
+            <li><a class="icon1">Install</a></li>
+            <li><a class="icon2">Repair/Reinstall</a></li>
+            <li><a class="icon3">Uninstall</a></li>
+        </ul>
+
+    </div>
+
+    <div class="frame blank">
+
+        <ul class="ul-style">
+            <li>Normal <p>bg:<strong>EEEEEE</strong>; text:<strong>181818</strong>; border:<strong>none</strong></p>
+            </li>
+            <li class="over">Over/Tab Selected <p>bg:<strong>F5F5F5</strong>; text:<strong>181818</strong>; border:<strong>CCCCCC</strong></p>
+            </li>
+            <li class="down">Down <p>bg:<strong>EEEEEE</strong>; text:<strong>181818</strong>; border:<strong>CCCCCC</strong></p>
+            </li>
+            <li class="disable">Disable <p>bg:<strong>EEEEEE</strong>; text:<strong>CCCCCC</strong>; border:<strong>none</strong></p>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="frame blank">
+
+        <ul class="ul-style delete">
+            <li>Normal <p>bg:<strong>EEEEEE</strong>; text:<strong>D0021B</strong>; border:<strong>none</strong></p>
+            </li>
+            <li class="over">Over/Tab Selected <p>bg:<strong>F5F5F5</strong>; text:<strong>D0021B</strong>; border:<strong>D0021B</strong></p>
+            </li>
+            <li class="down">Down <p>bg:<strong>EEEEEE</strong>; text:<strong>D0021B</strong>; border:<strong>D0021B</strong></p>
+            </li>
+            <li class="disable">Disable <p>bg:<strong>EEEEEE</strong>; text:<strong>EEC4C9</strong>; border:<strong>none</strong></p>
+            </li>
+        </ul>
+
+    </div>
+
+
+</body>
