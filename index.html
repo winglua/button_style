@@ -279,10 +279,59 @@
             color: #EEC4C9;
         }
 
+        .blue .checkbox a {
+            width: 18px;
+            height: 18px;
+            background-image: url(check.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .gray .checkbox a {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border: 1px solid #999;
+        }
+
+        .gray .checkbox .over {
+            border: 1px solid #066FE1;
+        }
+
+        .gray .checkbox .disable {
+            background-color: #eee;
+            border: 1px solid #ddd;
+        }
+
     </style>
 </head>
 
 <body>
+    <div class="frame">
+        <div class="btn blue">
+            <div class="group checkbox">
+                <div><a class="normal"></a> <span> Normal - bg:<strong>066FE1</strong>; icon-check:<strong>FFFFFF</strong>; border:<strong>023CA5</strong></span></div>
+                <div><a class="over"></a> <span> Over - bg:<strong>1686FF</strong>; icon-check:<strong>FFFFFF</strong>; border:<strong>005BFF</strong></span></div>
+                <!--                <div><a class="down"></a> <span> Down - bg:<strong>066FE1</strong>; check:<strong>FFFFFF</strong>; border:<strong>023CA5</strong></span></div>-->
+                <div><a class="disable"></a><span> Disable - bg:<strong>91BBE8</strong>; icon-check:<strong>C3E0FF</strong>; border:<strong>8CA6D4</strong></span></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="frame">
+        <div class="btn gray">
+            <div class="group checkbox">
+                <div><a class="normal"></a> <span>Normal - bg:<strong>FFFFFF</strong>; border:<strong>999999</strong></span></div>
+                <div><a class="over"></a> <span>Over - bg:<strong>FFFFFF</strong>; border:<strong>066FE1</strong></span></div>
+                <!--                <div><a class="down"></a> <span>Down - bg:<strong>CCCCCC</strong>; text:<strong>181818</strong>; border:<strong>999999</strong></span></div>-->
+                <div><a class="disable"></a> <span>Disable - bg:<strong>EEEEEE</strong>; border:<strong>DDDDDD</strong></span></div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <div class="frame">
         <div class="btn blue">
